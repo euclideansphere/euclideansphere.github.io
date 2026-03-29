@@ -1,25 +1,262 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
-		<title>Austin Hartline</title>
-		<link rel="stylesheet" href="https://newcss.net/new.min.css">
-		<body>
-				<h1>austin hartline</h1>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Austin Hartline</title>
+	<style>
+		:root {
+			--bg: #ffffff;
+			--text: #1a1a1a;
+			--accent: #666666;
+		}
+
+		@media (prefers-color-scheme: dark) {
+			:root {
+				--bg: #121212;
+				--text: #e0e0e0;
+				--accent: #a0a0a0;
+			}
+		}
+
+		body {
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+			background-color: var(--bg);
+			color: var(--text);
+			line-height: 1.6;
+			font-size: 1.1rem;
+			margin: 0;
+			display: flex;
+			justify-content: center;
+			min-height: 100vh;
+			padding: 60px 20px;
+		}
+
+		main {
+			max-width: 800px;
+			width: 100%;
+		}
+
+		h1 {
+			font-size: 2.5rem;
+			font-weight: 600;
+			margin-top: 0;
+			margin-bottom: 0.5rem;
+			letter-spacing: -0.02em;
+		}
+
+		h2 {
+			font-size: 1.4rem;
+			font-weight: 600;
+			margin-top: 3rem;
+			margin-bottom: 1rem;
+			color: var(--text);
+		}
+
+		h3 {
+			font-size: 1.1rem;
+			font-weight: 600;
+			margin-top: 1.5rem;
+			margin-bottom: 0.5rem;
+			color: var(--text);
+		}
+
+		h4 {
+			font-size: 1rem;
+			font-weight: 600;
+			margin-top: 1.2rem;
+			margin-bottom: 0.5rem;
+			color: var(--text);
+		}
+
+		section p,
+		section li {
+			margin-bottom: 1rem;
+			color: var(--accent);
+			max-width: 65ch;
+		}
+
+		section li {
+			margin-bottom: 0.5rem;
+		}
+
+		nav ul {
+			list-style: none;
+			padding: 0;
+			display: flex;
+			gap: 2rem;
+			margin-bottom: 3rem;
+			font-size: 1.2rem;
+		}
+
+		.qualifications-grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			column-gap: 2rem;
+		}
+
+		.sub-section {
+			opacity: 0.8;
+		}
+
+		@media (max-width: 768px) {
+			.qualifications-grid {
+				grid-template-columns: 1fr;
+				column-gap: 0;
+			}
+		}
+
+		a {
+			color: var(--text);
+			text-decoration: none;
+			font-weight: 500;
+			border-bottom: 1px solid transparent;
+			transition: border-color 0.2s;
+		}
+
+		a:hover {
+			border-bottom-color: var(--text);
+		}
+	</style>
+</head>
+
+<body>
+	<main>
+		<h1>austin hartline</h1>
+		<nav>
+			<ul>
+				<li><a href="austinhartline-resume.pdf">resume</a></li>
+				<li><a href="https://www.linkedin.com/in/austinhartline">linkedin</a></li>
+				<li><a href="https://github.com/euclideansphere">github</a></li>
+			</ul>
+		</nav>
+		<section>
+			<h2>bio</h2>
+			<p>I was born & raised in Milwaukee.</p>
+			<p>
+				I spend a lot of time outside. I like biking, rock climbing, camping, and hiking with my corgi named Nibbler.
+			</p>
+			<p>I really like post-punk, shoegaze, atmospheric, folk-alternative, and indie music.</p>
+		</section>
+
+		<section>
+			<h2>qualifications</h2>
+			<div class="sub-section">
+				<h3>strategy</h3>
 				<ul>
-						<li>
-								<a href="austinhartline-resume.pdf" id="resume" class="show-link">resume</a>
-						</li>
-						<li>
-								<a href="https://www.linkedin.com/in/austinhartline" id="linkedin" class="show-link">linkedin</a>
-						</li>
-						<li>
-								<a href="https://github.com/euclideansphere" id="github" class="show-link">github</a>
-						</li>
+					<li>I have lead domain driven design ventures to build alignment between stakeholders and technical ICs.</li>
+					<li>
+						I have lead teams of developers: driving CI/CD testing process, mentoring individuals, facilitating design
+						alignment, and resolving conflict.
+					</li>
+					<li>
+						I have lead months-long business critical projects, coordinating 3-6 ICs at a time to align, collaborate,
+						and deliver iteratively.
+					</li>
+					<li>
+						I have significant experience modernizing tech stacks for improved extensibility / reliability without
+						business disruption.
+					</li>
+					<li>
+						I have worked closely with compliance practitioners in spaces with financial regulators (FINRA, SEC),
+						ecommerce (PCI DSS), healthcare (HIPPA / PHI), and SOC2.
+					</li>
+					<li>I have significant hands-on experience with cloud architecture and infrastructure in AWS and GCP.</li>
+					<li>
+						I have significant hands-on experience with data infrastructure, executing large data migrations, regulatory
+						reporting, database design, SQL optimization, data pipelining, and safe security patching.
+					</li>
 				</ul>
-				<hr />
-				<section>
-						<p>I was born &amp; raised in Milwaukee.</p>
-						<p>I like biking, camping, urban exploration, road trips, national parks, and getting to know people. Bit picky about coffee. Into shoegaze &amp; early alternative music. I like most things punk derivative. Definitely an outdoor cat.</p>
-				</section>
-		</body>
+			</div>
+			<div class="qualifications-grid">
+				<div class="sub-section">
+					<h3>frontend</h3>
+					<ul>
+						<li>React Ecosystem</li>
+						<li>TypeScript / JavaScript</li>
+						<li>Tailwind, Bootstrap</li>
+						<li>Built custom branded design systems</li>
+					</ul>
+				</div>
+				<div class="sub-section">
+					<h3>backend</h3>
+					<ul>
+						<li>Ruby on Rails</li>
+						<li>Node.js (NestJS, Express, Fastify)</li>
+						<li>PostgreSQL</li>
+						<li>MySQL</li>
+						<li>MS-SQL</li>
+						<li>Elixir / Phoenix</li>
+						<li>C#</li>
+						<li>ASP.NET MVC</li>
+						<li>RESTful APIs</li>
+						<li>GraphQL</li>
+						<li>Domain Driven Design</li>
+						<li>CQRS</li>
+						<li>MQTT</li>
+					</ul>
+				</div>
+				<div class="sub-section">
+					<h3>infrastructure</h3>
+					<ul>
+						<li>AWS</li>
+						<li>GCP</li>
+						<li>Terraform</li>
+						<li>Bash</li>
+						<li>Linux</li>
+					</ul>
+				</div>
+			</div>
+			<div class="sub-section">
+				<h3>philosophy / non-bullet-pointable experience</h3>
+				<h4>modernization</h4>
+				<p>
+					It is always critical to start with automated tests that document the current system behavior before making
+					significant changes.
+				</p>
+				<h4>migrations</h4>
+				<p>
+					Rewrites / large refactors are very rarely a fruitful pursuit.
+				</p>
+				<p>
+					A system that could be rewritten 1 for 1 without introducing radical deviation from the current implicit
+					business invariants, load bearing defects, and other subtle nuances is likely not a system providing a
+					worthwhile value prop.
+				</p>
+				<h4>build strategy</h4>
+				<p>
+					When faced with clinical uncertainty, the safest bet is almost always to approach with minimalism. Minimal
+					changes, minimal design, minimal engineering. Let the nuances of the problems being solved emerge naturally in
+					parallel with the domain of the problem being solved.
+				</p>
+				<p>
+					This does not mean that we do not adhere to essential measures for tomorrow's extensibility or maintainability
+					for things that will see a tomorrow.
+				</p>
+				<h4>process evolution</h4>
+				<p>
+					Process change cannot be dictated, enforced, or even solicited. It happens slowly, as process participants
+					come to observe and understand for themselves a present action that works less effectively than a different,
+					more rewarding one. This can only be effectively influenced through understanding, knowledge sharing, and
+					active participation.
+				</p>
+				<h4>tools</h4>
+				<p>
+					Tools come and go. Attachment is a bid for misalignment, conflict, and suffering.
+				</p>
+				<p>
+					Tools are a vessel for ideas. Ideas can prove far more durable than the latest iteration of <i>my favorite
+						tool</i>. CQRS can be applied almost anywhere. The unix philosophy of small single purpose tools is a
+					paradigm that can be implemented anywhere.
+				</p>
+				<p>
+					Anyone can use any tool in a world where LLMs can deliver anything - if you just ask the right question.
+					Mastery of one's tools makes the craftsperson. Effective delivery lies somewhere in-between.
+				</p>
+			</div>
+		</section>
+	</main>
+</body>
+
 </html>
