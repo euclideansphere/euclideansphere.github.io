@@ -1,0 +1,336 @@
+% 
+% vim: tabstop=2 shiftwidth=2 expandtab noautoindent nosmartindent
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+% heading
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://euclideansphere.github.io}{\Large Austin Hartline}} & Email: \href{mailto:austin.dev@protonmail.com}{austin.dev@protonmail.com}\\
+  \href{https://euclideansphere.github.io/}{https://euclideansphere.github.io} & Mobile: +1 414-334-4061 \\
+\end{tabular*}
+
+\section{Objective}
+
+Proven engineer with 7+ years FTE experience seeking senior backend focused SWE role with opportunity to mentor, be mentored, and think critically about how to best empower decision makers with the data they need to be successful.
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Milwaukee School of Engineering}{Milwaukee, WI}
+      {Bachelor of Science in Software Engineering; GPA: 3.8}{Sep. 2013 -- May. 2017}
+
+    \item\small{
+      Eagle Scout; BSA
+    }
+
+  \resumeSubHeadingListEnd
+
+\section{Technical Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: SQL, Ruby, Typescript, C\#, Terraform, Python}
+   }
+   \item{
+     \textbf{Technologies}{: PostgreSQL, ReactJS, Ruby on Rails, NodeJS, AWS}
+   }
+ \resumeSubHeadingListEnd
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Rite-Hite}{Milwaukee, WI}
+      {Principal Software Engineer}{Oct 2024 - Present}
+      \resumeItemListStart
+        % \resumeItem{Data Platform Engineering}
+        %   {Leverage MySQL experience to optimize high-latency user reports, triage and preemptively mitigate outages, plan capacity, and reduce cloud costs.}
+        % \resumeItem{Data Governance, Leadership}
+        %   {Mentor cross-functional engineers in advanced query optimization, data integrity controls, SQL injection prevention, and index tuning to enable resiliency, integrity, and delivery velocity.}
+        \resumeItem{AI, IC Enablement}
+          {Evaluate and apply LLM based AI to analyze data, optimize workflows, and communicate technical objectives.}
+        % \resumeItem{Data Enablement}
+        %   {Led multiple initiatives to establish structured semantically annotated scalable data storage for future use of raw IoT data.}
+        \resumeItem{Technical Governance, Security}
+          {Collaborate with platform leadership to establish automated secure controls for least priviledge CI/CD pipelines, secret access, and data access.}
+        \resumeItem{Platform Engineering}
+          {Build out highly available, observable, and reliable IoT infratstructure using IaC (Terraform), Gitlab, and Google Cloud Platform for an IoT fleet of 17k loading docks.}
+        \resumeItem{Leadership}
+          {Lead technical implementation for team of 8 developers through numerous delivered projects with broad cross-functional scope.}
+        \resumeItem{Team Building}
+          {Build a culture of quality and operational excellence by establishing documentation practices (ADRs), knowledge sharing, and group collaboration expectations.} 
+          % {Champion data excellence by pioneering architectural design documentation (ADRs) to establish practical single-source-of-truth expectations for data integrity, scalability, and availability.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {NodaFi LLC}{(Remote) Milwaukee, WI}
+      {Software Contractor}{Jul 2023 - Oct 2024}
+      \resumeItemListStart
+        \resumeItem{Rapid Delivery}
+          {Prototype, build, and iterate on key features with tight deadlines to win customers and obtain Series A funding for a CMMS startup.}
+        \resumeItem{Javascript, Node}
+          {Build full stack features for a React-Native mobile app and a React web app backed by a GraphQL NestJS (NodeJS) web API.}
+        \resumeItem{Performance Engineering}
+          {Instrument DataDog telemetry and leverage MySQL experience to triage and improve site performance to rapidly scale a CMMS startup by 10x DAU.}
+        % \resumeItem{Elixir}
+        %   {Bootstrap a Phoenix / Elixir / PostgreSQL personal budget tracking application using Plaid.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Betterment, Inc}{(Remote) New York, NY}
+      {Full Stack Engineer III}{Jan 2022 - Jun 2023}
+      \resumeItemListStart
+        \resumeItem{Ruby on Rails}
+          {Design and build Ruby on Rails REST APIs, collaborating with mobile development while planning for concurrent ReactJS and StimulusJS web consumers.}
+        \resumeItem{Testing}
+          {Ensure software behavioral correctness using Jest, RSpec, DBT test, and in-house open-source software testing solutions to prevent escaped defects.}
+        \resumeItem{Leadership, Ruby on Rails}
+          {Became a designated organization wide Ruby Platform Reviewer to provide guidance to peers and influence platform best practices and standards.}
+        \resumeItem{Leadership, Data Engineering}
+          {Mentor ICs in SQL query optimization, index tuning, data modeling, transactional safety, and negotiating project scope.}
+        \resumeItem{Data Engineering}
+          {Lead technical compliance reporting initiatives using Apache Airflow, dbt (ETL), AWS Redshift to provide required automated immutable integrity proofs to financial regulators.}
+        \resumeItem{Data Integrity}
+          {Detect, remediate, and prevent data integrity drift through automated pipelines, coordinated migrations, and strict process governance.}
+        % \resumeItem{Mentorship, Leadership}
+        %   {Mentor junior developer on temporal SQL query optimization, data modeling, estimation, and negotiating project scope to foster IC growth.}
+        % \resumeItem{Fintech}
+        %   {Update React / Typescript flows to handle changing IRS rules around tax advantaged accounts}
+        % \resumeItem{Design}
+        %   {Co-lead writing the design proposal of recurring transfers implementation, providing data modeling and Ruby on Rails expertise.}
+        \resumeItem{Secure Design}
+          {Collaborate with architectural leadership, compliance, and product to lead design on secure, auditable, and defensible transfer flows between shared custody depository accounts.}
+        % \resumeItem{Plaid}
+        %   {Use DataDog to monitor, report, and plan Plaid integration fault tolerance and robustness improvements.}
+        % \resumeItem{Leadership}
+        %   {Mentor ICs in SQL query optimization, index tuning, data modeling, transactional safety, and negotiating project scope.}
+        % \resumeItem{On Call Responsibility}
+        %   {Participate in team and organization on-call processes, handling customer tickets and coordinating support for live production outages.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {GenoPalate, Inc}{(Remote) Milwaukee, WI}
+      {Software Engineer (Senior / Lead)}{Sep 2020 - Jan 2022}
+      \resumeItemListStart
+        \resumeItem{Javascript, Node}
+          {Collaborate with a small team to estimate, scope, and build features for a React-Native mobile application and a React web frontend backed by an ExpressJS / Knex (NodeJS) web service.}
+        % \resumeItem{Typescript Migration}
+        %   {Scope, document a plan, and lead migration effort to add type checking (Typescript) to all JS code and reduce escaped defects.}
+        \resumeItem{Integration}
+          {Communicate with external vendors to design and implement DNA data integrations, automating all manual process from shipment to DNA sample processing and DNA sequence ingestion.}
+        \resumeItem{Leadership}
+          {Collaborate with team and lead effort to standardize testing, code review, deployment, and error monitoring (Sentry) to reduce escaped defect rate significantly.}
+        \resumeItem{Cloud Infrastructure}
+          {Propose, plan, and lead project to standardize all AWS infrastructure deployment and CI/CD through Github Actions, Terraform (IaC), and Docker to eliminate infrastructure deployment drift.}
+        % \resumeItem{Agile}
+        %   {Participate in Agile / SCRUM process, including collaborative design sessions with stakeholders, iterative delivery, team estimations, and building consensus.}
+        % \resumeItem{Product Design}
+        %   {Participate in product design sessions and influence product direction.}
+        % \resumeItem{Node and PostgreSQL}
+        %   {Own and fix complex technical issues with RDBMS Node runtime and data corruption to eliminate production outages.}
+        % \resumeItem{PostgreSQL}
+        %   {Draft written plan and execute project to upgrade AWS RDS PostgreSQL instance without any unplanned downtime.}
+        % \resumeItem{Authentication OWASP Compliance}
+        %   {Propose, draft design, and lead rebuild of Redis JWT based authentication system for improved security and multi-session support.}
+        \resumeItem{Shopify Integration}
+          {Build robust fault tolerant support for Shopify order integration in Node / Typscript on AWS (ECS, Lambda, SQS, S3) to ingest every customer purchase.}
+        % \resumeItem{UX Support}
+        %   {Support UX developer in building shopify ordering workflow}
+        \resumeItem{Cloud Infrastructure / DevOps}
+          {Plan and lead project to standardize all AWS infrastructure deployment and CI/CD through Github Actions, Terraform (IaC), and Docker to eliminate clickops deployment error.}
+        % \resumeItem{Genomic Informatics}
+        %   {Improve genomic data mining algorithms (AWS Step Functions, Python, Parquet, AWS Athena, Javascript) through data model normalization (PostgreSQL) and rigorous backtesting.}
+        % \resumeItem{Research}
+        %   {Prototype and demo graph based (Neo4J) recipe generation solution using NLP.}
+      \resumeItemListEnd
+
+    \vspace{4pt}
+      \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \textbf{Travel Break} & \textit{\small Jun 2020 - Aug 2020} \\
+      \end{tabular*}\vspace{-5pt}
+
+    \resumeSubheading
+      {Wantable}{Milwaukee, WI}
+      {Senior Software Engineer}{Feb 2019 - May 2020}
+      \resumeItemListStart
+        % \resumeItem{Ruby on Rails}
+        %   {Build and maintain }
+        \resumeItem{React, Typescript}
+          {Assist lead UX designer in building a Typescript, React, and SCSS design system to replace CSS style guide to create a coherent automatable UX.}
+        \resumeItem{Leadership and Strategy}
+          {Owned the end-to-end prototyping and iterative delivery of custom business-critical warehouse management system (WMS) features, in-house operations tooling, and e-commerce transactions using Ruby on Rails, Postgres, and Redis.}
+        \resumeItem{Data Pipeline Optimization}
+          {Engineered and tuned high-throughput PostgreSQL (Arel) export pipelines to external marketing channels, dramatically reducing database resource contention and slashing cloud compute overhead by \$2,000/month.}
+        \resumeItem{Performance Optimization}
+          {Utilized New Relic and Sentry telemetry to optimize queries, indexes, and other data layer bottlenecks to materially improve reliability and SEO ranking.}
+        % \resumeItem{Data Science}
+        %   {Integrate rich Python / R data science models into dynamic React / Rails UIs to enable internal users to make quantitatively smarter decisions.}
+        % \resumeItem{Project Ownership}
+        %   {Prototype, and iteratively deliver customer facing e-commerce solutions using Rails, Redis, PostgreSQL and AngularJS to sell more product.}
+        % \resumeItem{Ruby on Rails}
+        %   {Standardize product data quality on all new products by building PIM solutions in AngularJS and React (Typescript).}
+        % \resumeItem{Testing}
+        %   {Write automated tests using RSpec.}
+        % \resumeItem{Warehouse Management}
+        %   {Build and improve warehouse logistics and inventory management solutions in .NET and Ruby on Rails to reduce labor inefficiency.}
+        % \resumeItem{Data Integration}
+        %   {Build and optimize Rails (ARel) and PostgreSQL export jobs to marketing channels to reduce cloud compute costs by \$2,000/month and improve customer acquisition, churn, and lifetime value metrics.}
+        \resumeItem{Heroku}
+          {Deploy and monitor a monolithic Rails application on Heroku.}
+        % \resumeItem{Performance Monitoring}
+        %   {Use New Relic, Sentry, and Lighthouse to improve user facing page and image load performance, which improved SEO and sales metrics.}
+        % \resumeItem{Redis}
+        %   {Optimize personalized product recommendations and content deliviery using Redis, an integrated recommender system, and ImageMagik to streamline user experience and sell more product.}
+        % \resumeItem{On Call Responsibility}
+        %   {Participate in on-call rotation including handling support tickets and solving live production issues.}
+
+        % TODO:
+        % \resumeItem{Iterative Delivery}
+        %   {Iteratively uplift and improve rich interactive dashboards for stylists to pick clothes for customers based on integrated data science models, a recommender system, warehouse inventory metrics, and customer preferences in React, Typescript, Ruby on Rails, and Python.}
+
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Direct Supply, Inc}{Milwaukee, WI}
+      {Sotware Engineer}{May 2017 - Feb 2019}
+      \resumeItemListStart
+        \resumeItem{.NET Development}
+          {Develop features and integrations for a catalog based food and equipment ecommerce solution in the eldercare industry using C\#, Razor, Typescript, ReactJS, CoffeeScript, AngularJS.}
+        \resumeItem{Domain Driven Development}
+          {Demonstrate strong understanding of CAP theorum and distributed computing by designing and building fault tolerant integrations between disjointed lines of business and domains.}
+        % \resumeItem{Microservices}
+        %   {Collaborate with team to design and build 12 factor microservices in C\#, SQL Server, and documented with OpenAPI to automate quote generation and work order tasks.}
+        \resumeItem{Platform Automation}
+          {Lead setup of automated infrastructure deployment to AWS ECS Fargate / AWS RDS (SQL Server) using Terraform, Hashicorp Vault, Bash, Docker, and Gitlab Pipelines.}
+        \resumeItem{Terraform}
+          {Pioneer IaC implementation (Terraform) and educate several teams of engineers how to deploy to multiply org efficiency.}
+        % \resumeItem{Open Source Contribution}
+        %   {Identify and fix defects in Terraform AWS Provider (golang) to improve deploy idempotency.}
+        % \resumeItem{DbUp}
+        %   {Write and deploy SQL Server schema and stored procedures using DbUp to .}
+        \resumeItem{Event Driven Architecture}
+          {Use AWS Lambda, PostgreSQL, RabbitMQ to connect distributed systems and automate services procurement.}
+        % \resumeItem{Xamarin}
+        %   {Build features for a Xamarin mobile application in .NET.}
+        % \resumeItem{Testing}
+        %   {Implement unit and integration tests using MSTest, Cucumber / Gherkin, Moq, Jasmine, Jest, Mocha.}
+        \resumeItem{Mentorship}
+          {Mentor intern and junior developers to increase team velocity and foster team strength.}
+        % \resumeItem{Shell Scripting}
+        %   {Use PowerShell to refactor and decouple segments of a large .NET monolithic code base for improved build times and developer experience.}
+        % \resumeItem{LEAN UX User Testing}
+        %   {Use LEAN UX methodology to perform direct user research with prototypes and A/B testing to reduce feature risk and improve delivery confidence.}
+        % \resumeItem{Monitoring, System Ownership}
+        %   {Monitor live production performance and influence feature prioritization using New Relic telemetry metrics.}
+
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Direct Supply, Inc}{Milwaukee, WI}
+      {Sotware Engineer (Intern)}{Jan 2014 - May 2017}
+      \resumeItemListStart
+        % \resumeItem{IIS}
+        %   {Learn, repair, and replace legacy asp procurement system served by IIS.}
+        % \resumeItem{ASP}
+        %   {Work with QA to fix print media rendering issues and IE bugs in asp and ASP.NET pages.}
+        % \resumeItem{Legacy System Management}
+        %   {Fix bugs in legacy procurement financial batch jobs in VB6, VC++08, .NET, T-SQL.}
+        % \resumeItem{Leadership}
+        %   {Lead summer intern project for 17 interns, which invovled: crafting a project idea, organizing meeting space, soliciting executive approval, delivering weekly status updates, and presenting a final demo.}
+        % \resumeItem{Mentorship}
+        %   {Mentor other interns on technical concepts and through their tasks.}
+        \resumeItem{RabbitMQ}
+          {Integrate RabbitMQ event broker to satisfy user needs across lines of business.}
+        \resumeItem{.NET Modernization}
+          {Participate in an agile team (full time as of 2016) to modernize 100s of legacy jobs and distributed web systems to a modern .NET on AWS cloud based architecture.}
+        % \resumeItem{Agile / SCRUM}
+        %   {Participate in Agile Methodology (SCRUM) though daily standups, grooming, estimation, sprint review, quarterly company wide demonstrations.}
+        % \resumeItem{Testing}
+        %   {Influence the team and technical leadership to adopt more robust testing practices.}
+        % \resumeItem{Deployment}
+        %   {Organize and perform software releases off hours (including writing deploy and testing procedure, writing post mortems when things go wrong).}
+        % \resumeItem{Legacy System Management}
+        %   {Migrate hundreds of legacy batch jobs from legacy clickops job orchestrator to automated Octopus Deploy, with CI/CD, auditing each for security vulnerability, proper access control, and VCS tracking.}
+        % \resumeItem{Integration}
+        %   {Build authorized iframe based integrations to external vendors and other internal lines of business.}
+        % \resumeItem{Frontend Development}
+        %   {Tackle frontend ASP.NET MVC development needs using Razor views, AngularJS, Coffeescript, JQuery, Javascript, Bower, Backbonejs.}
+        \resumeItem{SQL}
+          {Investigate and fix high I/O SQL deadlocking issues, with over 1000 transactions per second.}
+        % \resumeItem{Cross Team Collaboration}
+        %   {Coordinate frontend feature development with other teams release schedules and coding standards for systems not owned by my team.}
+
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+% \section{Projects}
+%   \resumeSubHeadingListStart
+%     \resumeSubItem{SuperMileage Vehicle}
+%       {Build telemetry system for prototype high efficiency vehicles using Python and Android SDK.}
+%   \resumeSubHeadingListEnd
+
+
+\end{document}
+
+
